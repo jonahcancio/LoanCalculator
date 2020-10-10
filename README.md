@@ -1,4 +1,9 @@
 # Loan Calculator
+Software Requirements:
+* Python and `pip`
+* Node and `npm`
+
+
 By default, make sure to run commands in the ROOT directory of the project. 
  
 
