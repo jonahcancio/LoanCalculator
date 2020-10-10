@@ -6,6 +6,7 @@ class CalcSerializer(serializers.ModelSerializer):
     class Meta:
         model = Calculation
         fields = '__all__'
+        depth = 1
 
 
 class InquirerSerializer(serializers.ModelSerializer):
