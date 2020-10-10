@@ -20,12 +20,10 @@ You can generate a new SQLite database using the following commands from the roo
 ```
 python manage.py migrate
 ```
-
-### Frontend
 You should find a `db.sqlite3` file in the project's root directory. 
 That file serves as the project's database. 
-Frontend Files
- You can build the frontend files by running these commands from the `/frontend` directory:
+### Frontend
+You can build the frontend files by running these commands from the `/frontend` directory:
 ```
 npm install
 npm run build
