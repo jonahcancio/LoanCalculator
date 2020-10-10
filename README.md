@@ -1,5 +1,6 @@
 # Loan Calculator
-By default, make sure to run commands in the ROOT directory of the project.
+By default, make sure to run commands in the ROOT directory of the project. 
+ 
 
 <!-- ## Frontend setup
 ```
@@ -8,33 +9,31 @@ npm run build
 ``` -->
 
 ## Setup
-You may use this project's or your own python virtual environment. 
+Entering a python virtual environment (venv) beforehand is recommended.
 
-To use this project's virtual environment, run:
-```
-env\Scripts\activate
-```
-Note: This virtual environment was preconfigured for Windows only
-
-If you're using your own virtual environment, you must install the python dependency packages first
+Whether you're in a venv or not, start by installing the python dependencies:
 ```
 pip install -r requirements.txt
 ```
-### Frontend Files
-Check the `/frontend/dist` directory for the frontend build files. You should find an `index.html` and its respective css and js folders there. On the off-chance that the build files aren't there, you can build them by running these commands from the `/frontend` directory:
+### Database
+You can generate a new SQLite database using the following commands from the root directory:
+```
+python manage.py migrate
+```
+
+### Frontend
+You should find a `db.sqlite3` file in the project's root directory. 
+That file serves as the project's database. 
+Frontend Files
+ You can build the frontend files by running these commands from the `/frontend` directory:
 ```
 npm install
 npm run build
 ```
-### Database
-You should find `db.sqlite3` file in the project's root directory. That file serves as the project's database. If that file is missing, you can generate a new one using the following commands:
-```
-python manage.py makemigrations
-python manage.py migrate
-```
+Check the `/frontend/dist` directory for the frontend build files. You should find an `index.html` and its respective css and js folders there.
 
 # Running the project
-Simply run:
+Enter this command from the root directory:
 ```
 python manage.py runserver
 ```
